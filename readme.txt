@@ -49,3 +49,5 @@ Inheritance:
     - Example:
         - Parent Class: `Animal` (has properties: name, age; methods: eat(), sleep())
         - Child Class: `Dog` (inherits from Animal, adds: bark() method)
+Encapsulation:
+    
