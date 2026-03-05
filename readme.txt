@@ -50,4 +50,14 @@ Inheritance:
         - Parent Class: `Animal` (has properties: name, age; methods: eat(), sleep())
         - Child Class: `Dog` (inherits from Animal, adds: bark() method)
 Encapsulation:
-    
+- Definition: Bundling data (attributes) and methods together, hiding internal details from the outside world
+- Access Modifiers: Control visibility of class members
+    - Public: Accessible from anywhere
+    - Private: Accessible only within the class
+    - Protected: Accessible within the class and by child classes
+- Benefits: Data protection, controlled access, flexibility to change internal implementation
+- Example:
+    - Private attribute: `_bankBalance` (cannot be accessed directly from outside)
+    - Public method: `deposit()`, `withdraw()` (controlled access to modify balance)
+    - Getter/Setter: Methods to safely read and update private attributes
+
