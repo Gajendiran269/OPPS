@@ -60,4 +60,17 @@ Encapsulation:
     - Private attribute: `_bankBalance` (cannot be accessed directly from outside)
     - Public method: `deposit()`, `withdraw()` (controlled access to modify balance)
     - Getter/Setter: Methods to safely read and update private attributes
-
+Polymorphisim
+- Definition: The ability of objects to take multiple forms or for methods to have multiple implementations
+- Types:
+    - Compile-time Polymorphism (Static Binding):
+        - Method Overloading: Multiple methods with same name but different parameters
+        - Operator Overloading: Same operator behaves differently for different types
+    - Runtime Polymorphism (Dynamic Binding):
+        - Method Overriding: Child class provides different implementation of parent's method
+        - Interface Implementation: Different classes implement same interface differently
+- Benefits: Code flexibility, reusability, easier maintenance, extensibility
+- Example:
+    - Method Overloading: `print(int)`, `print(string)`, `print(double)`
+    - Method Overriding: Parent class `Animal` has `makeSound()`, Child classes `Dog` and `Cat` override it differently
+    - Runtime: `Animal dog = new Dog(); dog.makeSound();` calls Dog's version, not Animal's
