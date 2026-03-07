@@ -10,7 +10,7 @@ class Student:
             print("class time is",timing)
 student1 = Student("ashok",4)
 student1.classTime(9)
-#Run time
+#Runtime
 class Parent:
     def Drive(self):
         print("Parent drives")

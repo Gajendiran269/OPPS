@@ -14,7 +14,7 @@ class Animal(ABC):
 
 class Dog(Animal):
     def make_sound(self):
-        return "Woof!"
+        return "Bow!"
     
     def move(self):
         return "Running on four legs"

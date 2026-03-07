@@ -4,6 +4,7 @@ class Bank:
         self._accNum = None   #protected
         self.__accBal = None    #private
     #Setter
+
     def setData(self,Name,Num,Bal):
         if len(Name) < 4:
             print("Invaid Name")
@@ -12,6 +13,7 @@ class Bank:
         self._accNum = Num
         self.__accBal = Bal
     #Getter
+    
     def getData(self):
         return (self.accName, self._accNum, self.__accBal)
 bank = Bank()

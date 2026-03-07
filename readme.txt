@@ -78,7 +78,7 @@ Abstraction:
 - Definition: Hiding complex implementation details and showing only the essential features to the user
 - Purpose: Simplify complexity, reduce code redundancy, increase security
 - How it works: Abstract classes and interfaces define what a class should do, not how to do it
-- Abstract Classes: 
+- Abstract Class: 
     - Cannot be instantiated directly
     - Contain abstract methods (methods without implementation)
     - Child classes must implement abstract methods

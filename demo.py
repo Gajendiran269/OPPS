@@ -7,6 +7,7 @@ class Veh:  #Class
 
     def run(self):  #Function
         print(f'{self.brand}  {self.model}  {self.num} is running successfully')
+        
 car = Veh(909)  #Object
 car.brand = "Tata"
 car.model = "mini"
