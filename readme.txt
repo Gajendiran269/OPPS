@@ -74,3 +74,22 @@ Polymorphisim
     - Method Overloading: `print(int)`, `print(string)`, `print(double)`
     - Method Overriding: Parent class `Animal` has `makeSound()`, Child classes `Dog` and `Cat` override it differently
     - Runtime: `Animal dog = new Dog(); dog.makeSound();` calls Dog's version, not Animal's
+Abstraction:
+- Definition: Hiding complex implementation details and showing only the essential features to the user
+- Purpose: Simplify complexity, reduce code redundancy, increase security
+- How it works: Abstract classes and interfaces define what a class should do, not how to do it
+- Abstract Classes: 
+    - Cannot be instantiated directly
+    - Contain abstract methods (methods without implementation)
+    - Child classes must implement abstract methods
+    - Can have both abstract and concrete methods
+- Interfaces:
+    - Define a contract/blueprint for classes
+    - All methods are abstract (in most languages)
+    - Classes implement interfaces and provide implementations
+- Benefits: Security, flexibility, maintainability, decoupling
+- Example:
+    - Abstract Class: `Vehicle` (abstract method: start(), stop())
+    - Concrete Classes: `Car`, `Bike` implement start() and stop() differently
+    - Interface: `PaymentMethod` (abstract method: pay())
+    - Implementations: `CreditCard`, `PayPal` implement pay() in their own way
