@@ -1,3 +1,5 @@
+from Models.user import User
+from Models.userManager import userManager
 class Login:
     loginMode = {1:"LOGIN",
                  2:"SIGNUP",
@@ -5,13 +7,27 @@ class Login:
                  4:"EXIT"}
     
     def Login(self):
-        print("Login")
+        Mail  = input("Enter mail:")
+        Password  = input("Enter Password:")
 
-    def Signup():
-        pass
+        user = userManager.getUsers(Mail,Password)  
+        if user:
+            print(f"Welcome {user.Name}")
+        else:
+                print("Invalid Credentials")
+    def Signup(self):
+        Name  = input("Enter Name:")
+        Number  = int(input("Enter Number:"))
+        Mail  = input("Enter mail:")
+        Password  = input("Enter Password:")
+
+        user = User(Name, Number, Mail, Password)    
+        userManager.addUser(user)
+
+
     
-    def Guest():
-        pass
+    def Guest(self):
+        print("guest")
     
     def Validate(self,choice):
         if choice == 1:
@@ -21,6 +37,7 @@ class Login:
         elif choice == 3:
             self.Guest()
         elif choice == 4:
+            print("Thank You For Using FoodApp")
             exit()
         else:
             print("Invalid Choice Retry")
