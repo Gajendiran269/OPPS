@@ -2,7 +2,7 @@ from login import Login
 
 
 class Food:
-    def start():
+    def start(self):
         print("<< Welcome To FoodApp >>")
 
         entry = Login()
@@ -13,10 +13,12 @@ class Food:
             print()
             try:
                 choice = int(input("Enter Your Choice : "))
-                entry.Validate(choice)
+                entry.Validate(Login.loginMode[choice])
             except ValueError:
+                print("Invalid Choice Retry")
+            except KeyError:
                 print("Invalid Choice Retry")
                 
             
             
-Food.start()
+Food().start()
